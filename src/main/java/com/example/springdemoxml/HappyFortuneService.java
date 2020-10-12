@@ -1,4 +1,4 @@
-package com.example.springdemo;
+package com.example.springdemoxml;
 
 public class HappyFortuneService implements FortuneService {
 

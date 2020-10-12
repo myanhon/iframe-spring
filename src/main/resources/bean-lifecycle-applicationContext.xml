@@ -6,9 +6,9 @@
 
 
     <!-- Define your dependency here -->
-    <bean id="myFortuneService" class="com.example.springdemo.HappyFortuneService"></bean>
+    <bean id="myFortuneService" class="com.example.springdemoxml.HappyFortuneService"></bean>
     <!-- Define your beans here -->
-    <bean id="myCoach" init-method="doMyStartupstuff" destroy-method="doMyCleanupStuffYoYo" class="com.example.springdemo.TrackCoach">
+    <bean id="myCoach" init-method="doMyStartupstuff" destroy-method="doMyCleanupStuffYoYo" class="com.example.springdemoxml.TrackCoach">
         <!-- Set up constructor injection your beans here -->
         <constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>

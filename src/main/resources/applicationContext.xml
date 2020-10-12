@@ -7,14 +7,14 @@
     <!-- Load the properties file: sport.properties file -->
     <context:property-placeholder location="classpath:sport.properties" />
     <!-- Define your dependency here -->
-    <bean id="myFortuneService" class="com.example.springdemo.HappyFortuneService"></bean>
+    <bean id="myFortuneService" class="com.example.springdemoxml.HappyFortuneService"></bean>
     <!-- Define your beans here -->
-    <bean id="myCoach" class="com.example.springdemo.BaseballCoach">
+    <bean id="myCoach" class="com.example.springdemoxml.BaseballCoach">
         <!-- Set up constructor injection your beans here -->
         <constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>
 
-    <bean id="myCricketCoach" class="com.example.springdemo.CricketCoach">
+    <bean id="myCricketCoach" class="com.example.springdemoxml.CricketCoach">
         <!-- Set up setter injection your beans here -->
         <property name="fortuneService" ref="myFortuneService"></property>
         <!-- Inject literal values-->
