@@ -8,7 +8,6 @@ public class DemoController {
 
     @GetMapping("/")
     public String showHome(){
-        System.out.println("ShowHome method");
         return "home";
     }
 }
